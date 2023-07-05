@@ -1,12 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
 .App {
   text-align: center;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
 
+.container {
+  max-width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+.col_5 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 41.66%;
+}
+
+.col_6 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 50%;
+}
+.body {
+  background-color: rgb(30, 30, 30);
+  min-height: 100vh;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.all_box {
+  border-radius: 7px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(30, 30, 30);
+}
+.all_box2{
+  padding-top: 40px;
+   border-radius: 10px;
+    
+}
+.justify_between{
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.box_1 {
+  padding: 20px;
+  transition: all 200ms ease-in-out;
+}
+.box_3:hover{
+   cursor: pointer;
+  background: linear-gradient(to right bottom, #595959 ,  #2C2C2C );
+  backdrop-filter: blur(8px);
+}
+.relative:hover .circle_position1{
+  opacity: 1;
+}
+.relative:hover .circle_position2{
+  opacity: 1;
+}
+.relative:hover .circle_position3{
+  opacity: 1;
+}
+.relative:hover .circle_position4{
+  opacity: 1;
+}
+
+
+.box_3{
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 421px;
+  margin-left: 50px;
+   border: 3px solid;
+  border-image-slice: 1;
+ border-image-source: linear-gradient(to right bottom, rgba(255, 125, 250, 1), rgba(253, 0, 243, 1), rgba(34, 162, 255, 1), rgba(34, 162, 255, 1)) ; 
+
+}
+.box_2:hover {
+  cursor: pointer;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.smart {
+  padding-top: 20px;
+  color: var(--white, #fff);
+  font-size: 20px;
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.para1 {
+  padding-top: 6px;
+  max-width: 224px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding-top: 6px;
+}
+.para2{
+  padding-top: 17px;
+  max-width: 314px;
+  color: rgba(255, 255, 255, 0.52);
+font-size: 23.109px;
+font-family:  Space Grotesk;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.circle_relative {
+  position: relative;
+}
+.circle_position1:hover {
+   
+  opacity: 1;
+}
 
+.circle_position1 {
+
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  position: absolute;
+  top: 10%;
+  left: 18%;
+}
+.circle_position2:hover {
+  opacity: 1;
+}
+.circle_position2 {
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  position: absolute;
+  top: 10%;
+  left: 42%;
+}
+.circle_position3:hover {
+  opacity: 1;
+}
+.circle_position3 {
+  opacity:0;
+  transition: all 200ms ease-in-out;
+  position: absolute;
+  top: 10%;
+  left: 68%;
+}
+.circle_position4:hover {
+  opacity: 1;
+}
+.circle_position4 {
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  position: absolute;
+  top: 10%;
+  left: 93%;
+}
+.smart1 {
+  max-width: 217px;
+  color: #fff;
+  text-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.62);
+  font-size: 39.857px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.smart2 {
+  max-width: 325.235px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.53);
+  font-size: 47.111px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
